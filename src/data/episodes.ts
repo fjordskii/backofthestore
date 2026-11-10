@@ -30,7 +30,7 @@ export type Episode = {
 
 /**
  * Published episodes only. Add a new public episode by appending one object
- * here and dropping its thumbnail in /public/episodes/<slug>.jpg — see README.
+ * here and dropping its thumbnail in /public/episodes/<slug>.jpg. See README.
  */
 export const episodes: Episode[] = [
   {
@@ -165,7 +165,7 @@ export const episodes: Episode[] = [
     duration: "PT4M39S",
     durationLabel: "4:39",
     summary:
-      "HP’s printing business brought in about $16.7 billion in fiscal 2025, and about two-thirds of that was supplies — ink and toner, not printers. We test the “cheap printer, expensive ink” idea against HP’s own annual report: the supplies split, printing’s margin versus PCs, what the 10-K does not disclose, Instant Ink plan terms (as of November 9, 2026), and the Dynamic Security lawsuits the filing describes.",
+      "HP’s printing business brought in about $16.7 billion in fiscal 2025, and about two-thirds of that was supplies, which is ink and toner, not printers. We test the “cheap printer, expensive ink” idea against HP’s own annual report: the supplies split, printing’s margin versus PCs, what the 10-K does not disclose, Instant Ink plan terms (as of November 9, 2026), and the Dynamic Security lawsuits the filing describes.",
     description:
       "We test the “cheap printer, expensive ink” idea against HP’s 2025 annual report: the supplies split, printing’s margin versus PCs, Instant Ink plan terms, and the Dynamic Security lawsuits the filing describes.",
     thumbnail: "/episodes/hp-ink.jpg",
