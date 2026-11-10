@@ -112,6 +112,7 @@ export default async function EpisodePage({
 
       <VideoEmbed
         chapters={episode.chapters}
+        poster={episode.thumbnail}
         title={episode.title}
         youtubeId={episode.youtubeId}
       />

@@ -6,10 +6,11 @@ import type { Chapter } from "@/data/episodes";
 type Props = {
   youtubeId: string;
   title: string;
+  poster?: string;
   chapters?: Chapter[];
 };
 
-export function VideoEmbed({ youtubeId, title, chapters }: Props) {
+export function VideoEmbed({ youtubeId, title, poster, chapters }: Props) {
   const [start, setStart] = useState<number | null>(null);
 
   const src = useMemo(() => {
@@ -23,7 +24,10 @@ export function VideoEmbed({ youtubeId, title, chapters }: Props) {
 
   return (
     <div className="player">
-      <div className="embed">
+      <div
+        className="embed"
+        style={poster ? { backgroundImage: `url(${poster})` } : undefined}
+      >
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

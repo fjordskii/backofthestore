@@ -65,7 +65,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="latest">
-            <VideoEmbed title={latest.title} youtubeId={latest.youtubeId} />
+            <VideoEmbed poster={latest.thumbnail} title={latest.title} youtubeId={latest.youtubeId} />
             <div className="latest-meta">
               <div>
                 <h3>

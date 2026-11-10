@@ -150,9 +150,11 @@ a:hover {
   letter-spacing: -0.01em;
 }
 
-.brand-name em {
+.brand-name em,
+.hero-copy h1 em {
   font-style: normal;
   color: var(--rust);
+  white-space: nowrap;
 }
 
 .brand-tagline {
@@ -239,10 +241,6 @@ a:hover {
   margin: 0 0 0.85rem;
 }
 
-.hero-copy h1 em {
-  font-style: normal;
-  color: var(--rust);
-}
 
 .lede {
   font-size: 1.15rem;
@@ -356,7 +354,7 @@ h3 {
 .embed {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: var(--dark);
+  background: var(--dark) center / cover no-repeat;
   border-radius: 0.7rem;
   overflow: hidden;
 }
@@ -426,10 +424,18 @@ h3 {
   overflow: hidden;
 }
 
+.episode-card-media {
+  display: block;
+  background: var(--dark);
+  min-height: 12rem;
+}
+
 .episode-card-media img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .episode-card-body {
@@ -602,6 +608,16 @@ h3 {
   text-align: left;
 }
 
+@media (max-width: 799px) {
+  .nav {
+    width: 100%;
+  }
+
+  .brand-tagline {
+    max-width: 14rem;
+  }
+}
+
 @media (min-width: 800px) {
   .hero {
     grid-template-columns: 1fr 1.05fr;
@@ -610,7 +626,7 @@ h3 {
   }
 
   .episode-card {
-    grid-template-columns: minmax(16rem, 22rem) 1fr;
+    grid-template-columns: minmax(18rem, 26rem) 1fr;
     align-items: stretch;
   }
 
