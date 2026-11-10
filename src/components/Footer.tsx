@@ -18,9 +18,8 @@ export function Footer() {
         </nav>
       </div>
       <p className="footer-note">
-        Not affiliated with the companies we cover. Not financial advice.
-        Narration is synthetic (Kokoro). Every figure is sourced from a public
-        filing linked on the episode page.
+        {site.description} Each episode page links to the filing. Narration is
+        synthetic (Kokoro).
       </p>
     </footer>
   );

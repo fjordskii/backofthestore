@@ -23,8 +23,8 @@ const body = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline.replace(/\.$/, "")}`,
-    template: `%s — ${site.name}`,
+    default: `${site.name}: ${site.tagline.replace(/\.$/, "")}`,
+    template: `%s: ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
@@ -34,20 +34,20 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_US",
     url: site.url,
-    title: `${site.name} — ${site.tagline.replace(/\.$/, "")}`,
+    title: `${site.name}: ${site.tagline.replace(/\.$/, "")}`,
     description: site.description,
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: `${site.name} — ${site.tagline}`,
+        alt: `${site.name}: ${site.tagline}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline.replace(/\.$/, "")}`,
+    title: `${site.name}: ${site.tagline.replace(/\.$/, "")}`,
     description: site.description,
     images: ["/og.jpg"],
   },

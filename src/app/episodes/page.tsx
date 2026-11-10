@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: `Every Back of the Store episode, with sources from public filings. ${site.tagline}`,
   alternates: { canonical: "/episodes" },
   openGraph: {
-    title: `Episodes — ${site.name}`,
+    title: `Episodes: ${site.name}`,
     description: `Every Back of the Store episode, with sources from public filings.`,
     url: "/episodes",
     images: ["/og.jpg"],
@@ -23,9 +23,8 @@ export default function EpisodesPage() {
       <p className="eyebrow">The catalog</p>
       <h1 className="page-title">Episodes</h1>
       <p className="page-intro">
-        Short explainers on the rent, royalties, fees, and float behind everyday
-        businesses. Each episode is sourced from a public filing, linked below
-        the video.
+        Every published episode is here. Under each video we link the public
+        filing we used.
       </p>
       {list.length > 0 ? (
         <div className="episode-list">

@@ -2,7 +2,7 @@
 
 Brand site for the [Back of the Store](https://www.youtube.com/@backofthestore) YouTube channel, live at [backofthestore.studio](https://backofthestore.studio).
 
-Short explainers of the rent, royalties, fees, and float behind everyday businesses — sourced from public filings, with original diagrams.
+Short explainers of where everyday businesses really make their money: the rent, royalties, fees and float. Every episode is sourced from public filings and uses original diagrams. We're not affiliated with the companies we cover, and nothing here is financial advice.
 
 ## Local development
 

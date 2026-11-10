@@ -3,13 +3,11 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Back of the Store explains the rent, royalties, fees, and float behind everyday businesses, using primary public filings and original diagrams.",
+  description: site.description,
   alternates: { canonical: "/about" },
   openGraph: {
-    title: `About — ${site.name}`,
-    description:
-      "How we source episodes, what we will and will not claim, and the disclaimers that apply to every video.",
+    title: `About: ${site.name}`,
+    description: site.description,
     url: "/about",
     images: ["/og.jpg"],
   },
@@ -26,14 +24,14 @@ export default function AboutPage() {
         <section className="about-block">
           <h2>The work</h2>
           <p>
-            Everyday businesses have a front of the store — the price on the
-            sign, the membership card, the thing you walk out holding — and a
-            back of the store: rent, royalties, fees, and float. We make short
-            explainers about that second part.
+            Everyday businesses have a front of the store: the price on the
+            sign, the membership card, the thing you walk out holding. They
+            also have a back of the store: the rent, royalties, fees and
+            float. We make short explainers about that second part.
           </p>
           <p>
-            The visuals are original diagrams, not company logos or trade
-            dress. The point is the filing, not a brand recreation.
+            The visuals are original diagrams. Company logos and trade dress
+            stay out. We are illustrating what the filing says.
           </p>
         </section>
 
